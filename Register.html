@@ -1,10 +1,36 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>REGISTER</title>
+    <script>
+      function status() {
+        document.getElementById("panel").innerHTML=  '<form>'
+          +'<label for="age">Age:</label><br>'
+          +'<input type="text" id="age" name="age" ><br>'
+         +'<p>Please select your gender:</p>'
+        +'<input type="radio" id="male" name="gender" value="male">'
+        +'<label for="male">Male</label><br>'
+        +'<input type="radio" id="female" name="gender" value="female">'
+        +'<label for="female">Female</label><br>'
+        +'<input type="radio" id="other" name="gender" value="other">'
+        +'<label for="other">Other</label><br>'
+        +'</form>'
+        +'<label for="slot">Choose a slot:</label>'
+        +'<select name="cars" id="cars">'
+          +'<option value="10">10 am</option>'
+          +'<option value="11">11 am</option>'
+          +'<option value="12">12 pm</option>'
+          +'<option value="4">4 pm</option>'
+          +'<option value="5">5 pm</option>'
+          +'<option value="6">6 pm</option>'
+        +'</select><br><br>'
+        +'<button type="submit">SUBMIT</button>';
+      }
+      </script>
   </head>
-  <body style="background-color:silver">
+    <body style="background-color:silver">
+      <h1><i>Register yourself here!!!</i></h1>
     <div style="background-color:black;color:white;padding:20px;">
 
     <form>
@@ -17,37 +43,12 @@
     <label for="symptoms">Symptoms:</label><br>
     <input type="text" id="symptoms" name="symptoms" ><br>
     <br>
-    <button style="background-color:green" class="booking" onclick="status()"">REGISTER</button>
+    <button type="button" style="background-color:green" class="booking" onclick="status()">REGISTER</button>
     <br>
   </form>
     <div id="panel">
-
     </div>
   </div>
-  <script>
-  function status() {
-    document.getElementById("panel").innerHTML=  '<form >'
-      +'<label for="age">Age:</label><br>'
-      +'<input type="text" id="age" name="age" ><br>'
-     +'<p>Please select your gender:</p>'
-    +'<input type="radio" id="male" name="gender" value="male">'
-    +'<label for="male">Male</label><br>'
-    +'<input type="radio" id="female" name="gender" value="female">'
-    +'<label for="female">Female</label><br>'
-    +'<input type="radio" id="other" name="gender" value="other">'
-    +'<label for="other">Other</label>'
-    +'</form>'
-    +'<label for="slot">Choose a slot:</label>'
-    +'<select name="cars" id="cars">'
-      +'<option value="10">10 am</option>'
-      +'<option value="11">11 am</option>'
-      +'<option value="12">12 pm</option>'
-      +'<option value="4">4 pm</option>'
-      +'<option value="5">5 pm</option>'
-      +'<option value="6">6 pm</option>'
-    +'</select>'
-    +'<button>SUBMIT</button>';
-  }
-  </script>
+
   </body>
 </html>
